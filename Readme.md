@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Татьяна Панина](https://up.htmlacademy.ru/adaptive/19/user/703337).
+* Студент: [Татьяна Ли](https://up.htmlacademy.ru/adaptive/19/user/703337).
 * Наставник: [Михаил Колотович](https://htmlacademy.ru/profile/id225353).
 
 ---
