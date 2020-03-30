@@ -8,18 +8,21 @@
 	    <header class="main-header">
 			<nav class="main-nav">
 				<ul class="main-nav__list site-list">
-					<li class="site-list__item"><a href="info.html">Информация</a></li>
+					<li class="site-list__item"><a href="#">Главная</a></li>
 					<li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
 					<li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
 					<li class="site-list__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
 				</ul>
+				<a class="main-header__logo" href="index.html">
+				<img class="main-header__logo-image" src="img/logotype-mobile.png"   width="102" height="83" alt="Логотип Седона">
+				</a>
 				<button class="main-nav__toggle" type="button">Открыть меню</button>
 			</nav>
-			<a class="main-header__logo" href="index.html">
-				<img class="main-header__logo-image" src="img/logotype-mobile.png"   width="102" height="83" alt="Логотип Седона">
-			</a>
+			
 		 
        </header>
+       
+       <main>
        
 	   <section class="main-page">
 				<img class="welcome" src="img/text-index.svg" width="281" height="214" alt="Welcome to Sedona">
@@ -27,75 +30,84 @@
 	   <div class="intro-mask">
        </div>
        <section class="description-of-benefits">
-				<p class="sedona">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-				<p class="reasons"><a href="info.html">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</a></p> 
+				<h1 class="sedona">Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p> 
 	   </section>
 	   <div class="intro-mask">
        </div>
        
        <section class="info">
-			<div class="reasons-one">
+			<section class="reasons-one">
+				<h2 class="reasons-one__title-1">Настоящий городок</h2>
 				<p class="reasons-one__sizes-one">
-					<span class="reasons-one__title-1">Настоящий<br> городок</span>
+					
 					<span class="reasons-one__number-reason">—№1—</span>
-					<span class="reasons-one__down">Седона-не аттракцион для туристов,<br> там течет своя жизнь</span>
+					<span class="reasons-one__down">Седона-не аттракцион для туристов, там течет своя жизнь</span>
 				</p>
-			</div>	
+			</section>	
 				<img src="img/feature-picture1.jpg" width="800" height="256" alt="Вид Седоны">
 				
 	   <section class="advantages">	
 		   <h2 class="visually-hidden">Наши преимущества</h2>
 		   <ul class="advantages__list">
 				<li class="advantages__item advantages__item--housing">
+					<h3 class="advantages__title-1">Жильё</h3>
 					<p class="advantages__recommendations">
-						<span class="advantages__title-1">Жильё</span><br>
-						<span>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</span>
+						
+						Рекомендуем пожить в настоящем мотеле, всё как в кино!
 					</p>
 				</li>
-				<li class="advantages__item advantages__item--food">
-					<p class="advantages__recommendations">
-						<span class="advantages__title-1">Еда</span>
-						<span class="advantages__description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</span>
-					</p>
-				</li>
+				
 				<li class="advantages__item advantages__item--souvenir">
 					<p  class="advantages__recommendations">
 						<span class="advantages__title-1">Сувениры</span>
-						<span class="advantages__description">Не только китайского, но и местного<br> производства!</span>
+						<span class="advantages__description">Не только китайского, но и местного производства!</span>
 					</p>
 				</li>
+				
+				<li class="advantages__item advantages__item--food">
+					<p class="advantages__recommendations">
+						<span class="advantages__title-1">Еда</span>
+						<span class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+					</p>
+				</li>
+				
 			</ul>
 	  </section>
 	  			
-			<img src="img/feature-picture2.jpg" width="800" height="256" alt="Вид плато">
-			<div class="reasons-one blue">
+			
+			<section class="reasons-one blue">
+				<span class="title-1">Там есть мост дьявола</span>
+				<span class="number-reason">—№2—</span>
 				<p class="sizes-two">
-					<span class="title-1">Там есть<br> мост дьявола</span>
-					<br><span class="number-reason">—№2—</span><br>
-					<span class="down">Да, по нему можно пройти! Если конечно <br>вы осмелитесь</span>
+					Да, по нему можно пройти! Если вы осмелитесь, конечно
 				</p>
-			</div>
-			<div class="reasons-one three">
+				<img src="img/feature-picture2.jpg" width="800" height="256" alt="Вид плато">
+			</section>
+			
+			<section class="reasons-one three">
+				<span class="title-1">Небольшая площадь</span>
+				<span class="number-reason">— №3—</span>
 				<p>
-					<span class="title-1">Небольшая<br> площадь</span>
-					<span class="number-reason">— №3—</span>
-					<span class="down">Все достопримечательности <br>находятся очень близко</span>
+					<span class="down">Все достопримечательности находятся очень близко</span>
 				</p>
-			</div>
-			<div class="reasons-one three">
+			</section>
+			
+			<section class="reasons-one three">
+				<span class="title-1">Красивая дорога</span>
+				<span class="number-reason">— №4—</span>
 				<p>
-					<span class="title-1">Красивая <br>дорога</span>
-					<span class="number-reason">— №4—</span>
-					<span class="down">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</span>
+					<span class="down">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
 				</p>
-			</div>
-			<div class="reasons-one three">
+			</section>
+			
+			<section class="reasons-one three">
+				<span class="title-1">Мало туристов</span>
+				<span class="number-reason">— №5—</span>
 				<p>
-					<span class="title-1">Мало<br> туристов</span>
-					<span class="number-reason">— №5—</span>
-					<span class="down">Большинство едет в гранд каньон <br>и толпится там</span>
+					<span class="down">Большинство едет в гранд каньон и толпится там</span>
 				</p>
-			</div>
+			</section>
 	</section><!-- class="info"-->
 	
 	<div class="for-position">		
@@ -113,6 +125,7 @@
 			<img src="img/map-mobale.jpg" width="320" height="350" alt="Карта Седоны">
 		</p>
 	</div>
+  </main>
 	
 	<footer class="main-footer">
 		<p class="main-footer__contacts contacts">
@@ -142,7 +155,7 @@
 		</ul>
 		
 		<p class="main-footer__copyright copyright">
-			<span class="copyright__text">Разработано </span>
+			Разработано 
 			<a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип Html академии">
 			</a>
