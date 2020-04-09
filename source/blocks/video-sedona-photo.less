@@ -1,0 +1,32 @@
+.photo-video {
+	//border: 1px solid red;
+}
+.video-sedona {
+	.mixin-flex-center();
+}
+
+.video-sedona__text {
+	font-size: @baseFontSize;
+	font-weight: @normal;
+	line-height: 24px;
+	color: @black-two;
+	.mixin-text-center();
+
+}
+
+.video-sedona__title {
+	font-size: @midFontSize;
+	font-weight: bold;
+	line-height: 26px;
+	color: @black;
+	.mixin-text-center();
+	margin-top: 35px;
+	//border: 1px solid;
+	}
+
+.video-sedona__video {
+	.mixin-size(320px, 201px);
+	background: url("@{path-img}/video-mobile@1x.jpg") no-repeat;
+	//border: 1px solid;
+	margin-bottom: 146px;
+}
