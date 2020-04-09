@@ -1,19 +1,21 @@
 .main-footer {
 	//border: 2px solid;
+	background-color: fefefe;
 	.main-footer__contacts {
 		font-size: @bigFontSize;
 		font-weight: bold;
+		line-height: 26px;
 		.mixin-text-center();
 	}
 	.main-footer__copyright {
 		.mixin-text-center();
 		font-size: @baseFontSize;
-		font-weight: normal;
+		font-weight: @normal;
+		line-height: 26px;
 	}
 	.copyright {
 		.mixin-flex-row();
-		align-items: center;
-		justify-content: center;
+		.mixin-just-center();
 		//border: 1px solid;
 	}
 	.copyright__link {
