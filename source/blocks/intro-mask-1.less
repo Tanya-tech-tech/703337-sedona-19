@@ -1,7 +1,28 @@
-.intro-mask-1 {
-	.mixin-all();
-	
+
+.container-mask__intro-mask-1 {
+	width: 320px;
+	display: flex;
 	height: 37px;
-	border: 2px solid;
+	margin-top: -19px;
+	//border: 2px solid red;
 	background: url("@{path-img}/bg-triangle.svg") no-repeat;
+}
+.container-mask__ph {
+	.mixin-just-flex();
+	margin-bottom: 0;
+	//border: 1px solid;
+}
+
+
+
+@media (min-width: @tablet-width) {
+	.container-mask__intro-mask-1 {
+		display: none;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.container-mask__intro-mask-1 {
+		display: none;
+	}
 }

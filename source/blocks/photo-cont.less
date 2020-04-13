@@ -31,3 +31,43 @@
 		}
     }
 }
+
+@media (min-width: @tablet-width) {
+	.photo-video {
+		width: 100%;
+		//border: 1px solid red;
+		margin: 0 auto;
+		.photo-video__for-position {
+			width: 100%;
+			//border: 1px solid red;
+			.photo-video__cont {
+				width: 428px;
+				height: 97px;
+				//border: 1px solid red;
+			}
+		}
+		
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.photo-video {
+		width: 1200px;
+		//border: 1px solid red;
+		margin: 0 auto;
+
+		.photo-video__for-position {
+			width: 1200px;
+			.mixin-flex-center();
+			//border: 1px solid red;
+			margin: 0 auto;
+		}
+
+		.photo-video__cont {
+			//border: 1px solid;
+			width: 440px;
+			height: 97px
+		}
+	}
+	
+}
