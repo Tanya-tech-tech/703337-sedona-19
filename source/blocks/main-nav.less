@@ -3,7 +3,7 @@ background-color: @white;
 margin: 0 auto;
 .mixin-all();
 //border: 2px solid red;
-flex-basis: content;
+
 }
 
 
@@ -12,20 +12,12 @@ flex-basis: content;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		position: relative;
 		min-height: 56px;
 		//background-color: pink;
-		.main-nav__toggle {
-			display: none;
-  		}
+		
   		background-color: @white;
-  		border: 3px solid yellow;
+  		//border: 3px solid yellow;
 	}
-	/*.main-nav ul:nth-child(2) {
-		display: flex;
-		justify-content: flex-end;
-	}*/
-	
 }
 
 @media (min-width: @desktop-width) {
@@ -42,10 +34,5 @@ flex-basis: content;
   		background-color: @white;
   		//border: 3px solid red;
     }
-    .main-nav ul:nth-child(2) {
-		display: flex;
-		justify-content: flex-end;
-		padding-left: auto;
-		
-	}
+    
 }
