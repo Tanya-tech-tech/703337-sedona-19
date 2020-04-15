@@ -8,3 +8,43 @@
 	text-align: center;
 	//border: 2px solid;
 }
+
+@media (min-width: @tablet-width) {
+	.main-page {
+		width: 758px;
+		height: 518px;
+		//border: 1px solid;
+		margin: 0 auto;
+		.main-page__cont {
+			width: 460px;
+			height: 350px;
+			background: url("@{path-img}/text-sedona-index.svg") no-repeat;
+			//border: 5px solid;
+			.welcome {
+			display: none;
+			}
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.main-page {
+		width: 1200px;
+		height: 518px;
+		.main-page__cont {
+			width: 460px;
+			height: 350px;
+			background: url("@{path-img}/text-sedona-index.svg") no-repeat;
+			//border: 5px solid;
+			.welcome {
+			display: none;
+			}
+		}
+		
+		background: url("@{path-img}/bg-back-desktop@1x.jpg") no-repeat;
+		
+		//border: 1px solid;
+		margin: 0 auto;
+	}
+	
+}
