@@ -1,6 +1,6 @@
 .site-list {
 	
-	flex-basis: content;
+	
 	display: flex;
 	flex-direction: column;
 	//border: 1px solid;
@@ -49,7 +49,7 @@
 		top: 223px;
 		width: 102px;
 		height: 83px;
-		background-image: url("@{path-img}/logo-sedona-mobile.svg");
+		//background-image: url("@{path-img}/logo-sedona-mobile.svg");
 		background-color: transparent;
 		//border: 5px solid;
 	}
@@ -58,9 +58,6 @@
 		//border: 5px solid;
 	}
 }
-
-
-
 
 .site-list__link {
 	font-family:@baseFont;
@@ -102,16 +99,12 @@
 		}
 		.logo {
 			order: 0;
-			position: relative;
+			//outline: 5px solid red;
 			.logo__link {
-				position: absolute;
-				top: 0;
-				left: 28px;
-				width: 102px;
-				height: 83px;
-				background-image: url("@{path-img}/logo-sedona-tablet.svg");
-				background-color: transparent;
-				//outline: 5px solid;
+				position: static;
+				background-image: none;
+				margin-left: -60px;
+				//outline: 2px solid;
 			}
 			.logo__toggle {
 				display: none;
