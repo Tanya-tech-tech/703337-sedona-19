@@ -1,7 +1,7 @@
 .main-footer {
-	width: 320px;
+	width: 100%;
 	.mixin-flex-center();
-	//border: 2px solid;
+	//outline: 2px solid;
 	background-color: #fefefe;
 	margin: 0 auto;
 	.main-footer__contacts {
@@ -9,13 +9,39 @@
 		font-weight: bold;
 		line-height: 26px;
 		.mixin-text-center();
+		//outline: 1px solid;
 		
 	}
+	.social {
+		.social__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			//outline: 1px solid;
+			width: 46px;
+			height: 48px;
+			background-color: @blue;
+
+			margin-right: 6px;
+			.social__button {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				//outline: 2px solid red;
+				.visually-hidden {
+					.mixin-visually();
+				}
+			}			
+		}
+	}
+	
 	.main-footer__copyright {
 		.mixin-text-center();
 		font-size: @baseFontSize;
 		font-weight: @normal;
 		line-height: 26px;
+		//outline: 1px solid;
 	}
 	.copyright {
 		.mixin-flex-row();
@@ -26,14 +52,7 @@
 		//border: 1px solid;
 		margin-left: 11px;
 	}
-	.social {
-		
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		//border: 1px solid;
-
-	}
+	
 }
 
 

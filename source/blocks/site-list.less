@@ -1,6 +1,5 @@
 .site-list {
 	
-	
 	display: flex;
 	flex-direction: column;
 	//border: 1px solid;
@@ -20,10 +19,8 @@
 	//outline: 2px solid;
 }
 .site-list__close {
-	
 	.visually-hidden {
 		.mixin-visually();
-		
 	}
 	.site-list__svg {
 		fill: @white;
@@ -32,30 +29,47 @@
 }
 
 .site-list__item {
+	height: 56px;
 	.mixin-li();
-	.mixin-all();
-	.mixin-just-center();
-		
+	text-align: center;		
 }
+
 .logo {
 	order: 1;
-
 	height: 56px;
 	background-color: @white;
 	//outline: 2px solid;
-	
+	display: flex;
+	flex-direction: row;
+	border-bottom: none;
 	.logo__link {
-		position: absolute;
-		top: 223px;
-		width: 102px;
-		height: 83px;
-		//background-image: url("@{path-img}/logo-sedona-mobile.svg");
+
 		background-color: transparent;
-		//border: 5px solid;
+		//outline: 3px solid;
+		margin-left: 109px;
+		border-bottom: none;
 	}
 	.logo__toggle {
-		margin-left: auto;
+		height: 23px;
+		width: 23px;
+		cursor: pointer;
+		//outline: 1px solid;
+		margin-top: 17px;
+		margin-left: 66px;
+		padding: 0;
+		background-color: @white;
+		border-bottom: none;
+		border-right: none;
 		//border: 5px solid;
+		.visually-hidden {
+			.mixin-visually();
+		}
+	}
+	.logo__toggle svg {
+
+		fill: @blue;
+		border-bottom: none;
+		//outline: 1px solid;
 	}
 }
 
@@ -66,7 +80,6 @@
 	color: @white;
 	text-decoration: none;
 	line-height: 40px;
-	
 }
 
 @media (min-width: @tablet-width) {
@@ -74,14 +87,13 @@
 		width: 100%;
 		box-sizing: border-box;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		flex-direction: row;
 		background-color: @white;
 		//outline: 2px solid green;
 		margin-top: 0;
 
 		.site-list__item {
-			
 			background-color: @white;
 			min-height: 56px;
 			border-bottom: none;
@@ -97,21 +109,19 @@
 				//border: 1px solid;
 			}
 		}
+
 		.logo {
 			order: 0;
 			//outline: 5px solid red;
 			.logo__link {
-				position: static;
-				background-image: none;
-				margin-left: -60px;
 				//outline: 2px solid;
 			}
 			.logo__toggle {
 				display: none;
 			}
 		}
-		
 	}
+
 	.site-list__close  {
 		display: none;
 	}
@@ -127,18 +137,20 @@
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
 		flex-wrap: wrap;
 		background-color: @white;
-		//border: 2px solid green;
+		//outline: 2px solid green;
 		margin-top: 0;
 
 		.site-list__item {
+			display: flex;
+			flex-direction: row;
 			width: 239px;
 			background-color: @white;
-			
 			min-height: 56px;
 			border-bottom: none;
-			//border: 1px solid;
+			//outline: 1px solid;
 			.site-list__link {
 				color: @black;
 				font-family:@baseFont;
@@ -146,10 +158,19 @@
 				font-weight: bold;
 				text-decoration: none;
 				line-height: 26px;
+				margin: auto auto;
+				//outline: 1px solid;
 			}
 		}
 		.site-list__close  {
 		display: none;
+		}
+		.logo {
+			//outline: 1px solid;
+			.logo__link {
+				//outline: 1px solid;
+				margin: 0 auto;
+			}
 		}
 
 	}

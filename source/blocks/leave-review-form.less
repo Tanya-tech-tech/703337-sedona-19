@@ -1,17 +1,41 @@
 .leave-review {
-	.mixin-size(276px, 140px);
+	width: 276px;
 	.mixin-flex-center();
-	//border: 1px solid;
+	//outline: 1px solid;
 	margin: 0 auto;
-}
-.leave-review__title {
-	font-size: @midFontSize;
-	font-weight: bold;
+	.leave-review__title {
+		font-size: @midFontSize;
+		font-weight: bold;
+		//outline: 1px solid;
+		margin-top: 41px;
+	}
+	.leave-review__text {
+		font-size: @baseFontSize;
+		font-weight: @normal;
+		color: @black-two;
+		.mixin-text-center();
+		//outline: 1px solid;
+	}
 }
 
-.leave-review__text {
-	font-size: @baseFontSize;
-	font-weight: @normal;
-	color: @black-two;
-	.mixin-text-center();
+@media (min-width: @tablet-width) {
+	.leave-review {
+		//outline: 3px solid green;
+		width: 450px;
+		margin-bottom: 80px;
+		.leave-review__title {
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 26px;
+			//outline: 1px solid;
+		}
+		.leave-review__text {
+			font-size: @baseFontSize;
+			font-weight: @normal;
+			color: @black-two;
+			line-height: 24px;
+			margin-top: 0;
+			//outline: 1px solid;
+		}
+	}
 }

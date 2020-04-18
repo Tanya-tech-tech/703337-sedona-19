@@ -4,8 +4,8 @@
 	.mixin-border-bottom();
 
 	.photo-video__cont {
-		width: 269px;
-		height: 112px;
+		width: 280px;
+		
 		.mixin-just-flex();
 		flex-direction: column;
 		.mixin-text-center();
@@ -19,15 +19,15 @@
 			font-size: @midFontSize;
 			font-weight: bold;
 			line-height: 26px;
-			//border: 1px solid;
+			//outline: 1px solid;
 		}
 		.photo-video__text {
-			margin-top: 0;
+			
 			font-size: @baseFontSize;
 			font-weight: @normal;
 			color: @black-two;
 			line-height: 24px;
-			//border: 1px solid;
+			//outline: 1px solid;
 		}
     }
 }
@@ -35,15 +35,28 @@
 @media (min-width: @tablet-width) {
 	.photo-video {
 		width: 100%;
-		//border: 1px solid red;
+		outline: 1px solid red;
 		margin: 0 auto;
 		.photo-video__for-position {
+			//outline: 1px solid;
 			width: 100%;
-			//border: 1px solid red;
+			
 			.photo-video__cont {
-				width: 428px;
+				width: 457px;
 				height: 97px;
-				//border: 1px solid red;
+				//outline: 1px solid red;
+				margin-top: 76px;
+				margin-bottom: 75px;
+				.photo-video__title {
+					font-size: 30px;
+					font-weight: bold;
+					line-height: 26px;
+				}
+				.photo-video__text {
+					width: 100%;
+					//outline: 1px solid;
+					margin-top: 30px;
+				}
 			}
 		}
 		
@@ -52,19 +65,18 @@
 
 @media (min-width: @desktop-width) {
 	.photo-video {
-		width: 1200px;
-		//border: 1px solid red;
+		width: 100%;
 		margin: 0 auto;
 
 		.photo-video__for-position {
-			width: 1200px;
+			width: 100%;
 			.mixin-flex-center();
-			//border: 1px solid red;
+			//outline: 1px solid red;
 			margin: 0 auto;
 		}
 
 		.photo-video__cont {
-			//border: 1px solid;
+			//outline: 1px solid;
 			width: 440px;
 			height: 97px
 		}

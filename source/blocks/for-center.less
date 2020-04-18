@@ -1,4 +1,32 @@
-@media (min-width: @tablet-width) {}
+.for-center {
+		width: 280px;
+		height: 58px;
+		display: flex;
+		background-color: @blue;
+		color: @white;
+		margin-top: 40px;
+		margin: 0 auto;
+	}
+.button-hotel {
+			width: 100%;
+			height: 100%;
+			background-color: @blue;
+			color: @white;
+			margin: auto auto;
+			font-family: @baseFont;
+			font-size: @bigFontSize;
+			font-weight: bold;
+			line-height: 26px;
+			outline: none;
+		}
+@media (min-width: @tablet-width) {
+	.for-center {
+		//outline: 5px solid;
+		margin-top: 47px;
+		margin-bottom: 58px;
+		width: 458px;
+	}	
+}
 
 @media (min-width: @desktop-width)  {
 	.for-center {
