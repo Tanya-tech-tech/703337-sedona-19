@@ -226,7 +226,7 @@
     
     <main class="cont-ind">
       <section class="main-page-photo">
-      <img class="sedona" src="img/sedona.svg" width="229" height="39" alt="Sedona">
+          <img class="sedona" src="img/sedona.svg" width="229" height="39" alt="Sedona">
       </section>
       <div class="intro-mask-photo">
       </div>
@@ -237,7 +237,109 @@
         достопримечательностях
         </p>
       </section>
+      
+      <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
+              <fieldset class="form__impres impres">
+                  <legend>ВАше Общее впечатление:</legend>
+                  <label>
+                      <input type="radio" name="question" value="Скорее положительное" checked>
+                      Скорее положительное
+                  </label>
+                  <label>
+                      <input type="radio" name="question" value="Скорее отрицательное">
+                      Скорее отрицательное
+                  </label>
+                  <label>
+                      <input type="radio" name="question" value="Затрудняюсь ответить">
+                      Затрудняюсь ответить
+                  </label>
+              </fieldset>
+              
+              <fieldset class="form__introduce introduce">
+                  <legend>Представьтесь:</legend>
+                  <ul>
+                      <li>
+                          <label>
+                              ИМЯ*:<input type="text" name="nick" value="Петр" required>
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              ФАМИЛИЯ*:<input type="text" name="surname" value="Иванов" required>
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              Отчество:<input type="text" name="patronymic" value="Александрович">
+                          </label>
+                      </li>
+                  </ul>
+              </fieldset>
+              
+              <fieldset class="form__contact-info contact-info">
+                  <legend>Контактная информация:</legend>
+                  <label>
+                      Телефон*:<input type="tel" name="tel" required placeholder="Введите телефон">
+                  </label>
+                  <label>
+                      Электронная почта*:<input type="email" name="email" placeholder="Введите e-mail" required>
+                  </label>
+              </fieldset>
+              
+              <fieldset class="form__attraction attraction">
+                  <legend>посещенные достопримечательности:</legend>
+                  <ul class="attraction__list">
+                      <li>
+                          <input type="checkbox" name="bridge" id="bridge" checked>
+                          <label for="bridge" checked>Мост Дьявола</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="mount" id="mount" checked>
+                          <label for="mount" checked>Гора-Колокол</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="park" id="park" checked>
+                          <label for="park" checked>Слайд-парк</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="rocks" id="rocks" checked>
+                          <label for="rocks" checked>Красные скалы</label>
+                      </li>
+                  </ul>
+              </fieldset>
+              
+              <fieldset class="form__emotions emotions">
+                  <legend>Опишите свои эмоции:</legend>
+                  <textarea class="emotions__delight" name="delight">Опишите подробно все свои восторги</textarea>
+              </fieldset>
+              
+              <div class="feedback-button">
+                  <button class="button" type="submit">Отправить отзыв</button>
+                  <p>* — обязательные поля</p>
+              </div>
+        </form>
     </main>
+    
+    <section class="modal">
+        <section class="feedback-sent">
+            <p class="feedback-sent__title">Ваш отзыв отправлен!<p>
+            <p  class="feedback-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+            В ближайшее время мы опубликуем его на сайте.
+            </p>
+        </section>
+        <div class="feedback-sent__for-center">
+          <button class="button-modal" type="button">Закрыть окно</button>
+        </div>
+    </section>
+    <section class="modal-something-wrong">
+        <section class="something-wrong">
+            <p class="something-wrong__title">Что-то пошло не так!<p>
+            <p  class="something-wrong__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </section>
+        <div class="something-wrong__for-center">
+          <button class="button-modal" type="button">Ок</button>
+        </div>
+    </section>
     
     <footer class="main-footer">
       <p class="main-footer__contacts contacts">#Vizitsedona

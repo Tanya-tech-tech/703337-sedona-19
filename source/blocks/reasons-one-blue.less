@@ -1,30 +1,41 @@
 
 .reasons-one-blue {
-	//border: 5px solid blue;
+	//outline: 5px solid blue;
 	width: 265px;
 	height: 105px;
-	.mixin-flex-center();
-	.mixin-reason-blue();
-	.mixin-text-center();
+	display: flex;
+	flex-direction: column;
+	background-color: @blue;
+    font-size: @baseFontSize;
+    color: @white;
+    font-weight: @normal;
+    line-height: 21px;
 	margin-top: 43px;
 	margin-bottom: 45px;
 
 	.reasons-one-blue__title-1 {
-		.mixin-reason-title();
+		width: 100px;
+		//outline: 1px solid;
+		text-align: center;
 		font-size: @midFontSize;
-		line-height: 26px;
-		margin-top: 0;
-		margin-bottom: 0px;
+		font-weight: bold;
+		color: @white;
+		line-height: 26px;		
+		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 	.reasons-one-blue__number-reason {
 		//border: 1px solid;
 		font-size: @baseFontSize;
 		font-weight: @normal;
 		line-height: 21px;
+		margin: 0 auto;
 	}
 	.reasons-one-blue__sizes-one {
-		//border: 1px solid;
-		margin-top: 0;
+		//outline: 1px solid;
+		width: 270px;
+		margin-top: 15px;
+		text-align: center;
 		font-size: @baseFontSize;
 		font-weight: @normal;
 		line-height: 21px;
@@ -41,11 +52,17 @@
 }
 
 @media (min-width: @desktop-width) {
-
-.reasons-one-blue {
-	width: 400px;
-	height: 256px;
-	.mixin-flex-center();
-	//border: 1px solid;
-}
+	.reasons-one-blue {
+		width: 400px;
+		height: 256px;
+		.mixin-flex-center();
+		outline: 1px solid;
+		.reasons-one-blue__title-1 {
+			width: 130px;
+			font-weight: bold;
+			font-size: @bigFontSize;
+			line-height: 26px;
+			//outline: 1px solid;
+		}
+	}
 }

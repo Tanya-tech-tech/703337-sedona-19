@@ -1,11 +1,18 @@
 .advantages {
+	//outline: 2px solid green;
 	.visually-hidden {
 		.mixin-visually();
 	}
 	.advantages__list {
-		
-		//border: 2px solid red;
-		
+		box-sizing: border-box;
+		height: 100%;
+		margin-top: 0;
+		padding: 0;		
+		display: flex;
+		flex-direction: column;
+		padding-left: 22px;
+		padding-bottom: 35px;
+		//outline: 2px solid red;
 	}
 	.advantages__title-1 {
 		font-size: @midFontSize;
@@ -13,40 +20,57 @@
 		font-weight: bold;
 		//border: 1px solid;
 		margin-top: 0;
-		margin-bottom: 0;
-			
+		margin-bottom: 0;			
 		}
+
 	.advantages__recommendations {
-		//border: 1px solid;
-		margin-top: 0;
+		//outline: 1px solid;
+		margin-top: 15px;
 		color: @black-two;
 		font-size: @baseFontSize;
 		font-weight: @normal;
 		line-height: 21px;
-		}
+		margin-bottom: 0;
+	}
 		
-
 	.advantages__item {
-		.mixin-all();
-		margin-left: -40px;
-		//border: 2px solid;
+		margin: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		//outline: 2px solid;
+		.advantages__row {
+			//outline: 1px solid;
+			margin-left: 10px;
+			margin-top: 10px;
+			padding-bottom: 0;
+		}
+	}
+	.advantages__item svg {
+		width: 37px;
+		height: 36px;
+		fill: @blue;
+		//outline: 1px solid;
 	}
 
-	.advantages__item--housing {
-		width: 210px;
-		height: 92px;
-		margin-top: 41px;
+	.advantages__item--housing {		
+		list-style: none;
+		margin-top: 26px;
+		.advantages__row {
+			width: 212px;
+		}
 	}
 	.advantages__item--souvenir {
-		width: 199px;
-		height: 72px;
-		margin-top: 39px;
+		.advantages__row {
+			width: 199px;
+		}		
 	}
 
 	.advantages__item--food {
-		width: 180px;
-		height: 92px;
-		margin-top: 38px;
+		.advantages__row {
+			width: 182px;
+		}
 	}
 }
 
@@ -118,21 +142,34 @@
 		//outline: 1px solid;
 		
 		.advantages__list {
+			height: 100%;
+			margin-top: 0;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
 			//outline: 1px solid;
-			
+			box-sizing: border-box;			
 			.advantages__item {
-				margin-bottom: 85px;
+				height: 100%;
+				margin-top: 0; 
+				padding-top: 60px;
 				//outline: 1px solid;
+				margin-top: 20px;
+				.advantages__title-1 {
+					//outline: 1px solid;
+				}
+			}
+			.advantages__item svg {
+				//outline: 1px solid;
+				fill: @blue;
+				margin: 0 auto;
+				margin-bottom: 33px;
 			}
 			.advantages__item--housing {
 				width: 280px;
 				.advantages__recommendations {
 					width: 100%;
 					margin: 0 auto;
-					margin-top: 10px;
 					//outline: 1px solid;
 					line-height: 21px;
 				}
@@ -142,7 +179,6 @@
 				.advantages__recommendations {
 					width: 100%;
 					margin: 0 auto;
-					margin-top: 10px;
 					//outline: 1px solid;
 					line-height: 21px;
 				}
@@ -152,7 +188,6 @@
 				.advantages__recommendations {
 					width: 100%;
 					margin: 0 auto;
-					margin-top: 10px;
 					//outline: 1px solid;
 					line-height: 21px;
 				}

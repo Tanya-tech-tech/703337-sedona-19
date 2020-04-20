@@ -1,0 +1,107 @@
+.form {
+	//outline: 3px solid red;
+	
+}
+@media (min-width: @tablet-width) {}
+
+@media (min-width: @desktop-width) {
+	.form {
+		width: 100%;
+		//outline: 3px solid red;
+		font-family: @baseFont;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		.form__impres {
+			width: 50%;
+			outline: 1px solid;
+		}
+		.form__introduce {
+			width: 50%;
+			outline: 1px solid;
+		}
+		.form__contact-info {
+			width: 100%;
+			outline: 1px solid;
+		}
+		.form__attraction {
+			width: 100%;
+			outline: 1px solid;
+			.attraction__list {
+				outline: 1px solid;
+			}
+		}
+		.form__emotions {
+			width: 100%;
+			outline: 1px solid;			
+		}
+		.feedback-button {
+			width: 100%;
+			//outline: 1px solid;
+			.button {
+				width: 480px;
+				height: 58px;
+				background-color: @blue;
+				color: @white;
+				font-family: @baseFont;
+				font-size: @bigFontSize;
+				font-weight: bold;
+				line-height: 26px;
+			}
+		}
+		.emotions {
+			margin: 0 auto;
+			legend {
+				text-align: center;
+			}
+			.emotions__delight {
+				width: 960px;
+				height: 160px;
+				background-color: @back-grey;
+				font-family: @baseFont;
+				font-weight: bold;
+				font-size: @midFontSize;
+				line-height: 26px;
+			}
+		}
+		.introduce {
+			legend {
+				font-family: @baseFont;
+				font-weight: bold;
+				font-size: @bigFontSize;
+				line-height: 26px;
+			}
+		}
+		.impres {
+			legend {
+				font-family: @baseFont;
+				font-weight: bold;
+				font-size: @bigFontSize;
+				line-height: 26px;
+			}
+			label {
+				font-family: @baseFont;
+				font-weight: bold;
+				font-size: @midFontSize;
+				line-height: 26px;
+				text-transform: none;
+			}
+		}
+		.introduce {
+			input {
+				font-family: @baseFont;
+				font-weight: bold;
+				font-size: @midFontSize;
+				line-height: 26px;
+			}			
+		}
+		.contact-info {
+			input {
+				font-family: @baseFont;
+				font-weight: bold;
+				font-size: @midFontSize;
+				line-height: 26px;
+			}
+		}
+	}
+}

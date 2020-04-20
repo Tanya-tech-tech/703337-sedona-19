@@ -74,6 +74,7 @@
 }
 
 .site-list__link {
+	display: inline-block;
 	font-family:@baseFont;
 	font-size: @midFontSize;
 	font-weight: bold;
@@ -87,17 +88,19 @@
 		width: 100%;
 		box-sizing: border-box;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		flex-direction: row;
 		background-color: @white;
 		//outline: 2px solid green;
 		margin-top: 0;
 
 		.site-list__item {
+			display: flex;
+			width: 153px;
 			background-color: @white;
 			min-height: 56px;
 			border-bottom: none;
-			//border: 1px solid;
+			//outline: 1px solid;
 			.site-list__link {
 				text-align: center;
 				color: @black;
@@ -106,7 +109,8 @@
 				font-weight: bold;
 				text-decoration: none;
 				line-height: 26px;
-				//border: 1px solid;
+				margin: auto auto;
+				//outline: 1px solid;
 			}
 		}
 
@@ -115,6 +119,7 @@
 			//outline: 5px solid red;
 			.logo__link {
 				//outline: 2px solid;
+				margin: 0 auto;
 			}
 			.logo__toggle {
 				display: none;
