@@ -3,8 +3,8 @@
 	background-color: @grey;
 }
 .reasons-one-three {
-	//outline: 5px solid red;
-	margin-top: 33px;
+	//outline: 1px solid red;
+	margin-top: 22px;
 	position: relative;
 	background-color: @grey;
 	.mixin-text-center();
@@ -32,9 +32,18 @@
 .reasons-one-three--area {
 	//outline: 2px solid green;
 	padding-bottom: 32px;
+	.reasons-one-three__title-1 {
+		//outline: 1px solid;
+		margin-top: 10px;
+	}
+	.reasons-one-three__number-reason {
+		//outline: 1px solid;
+		
+	}
 	.reasons-one-three__text {
 		width: 248px;
 		margin: 0 auto;
+		margin-top: 10px;
 		
 	}	
 }
@@ -44,15 +53,16 @@
 	.reasons-one-three__text {
 		width: 210px;
 		margin: 0 auto;
+		margin-top: 10px;
 	}			
 }
 .reasons-one-three--tour {
-	//outline: 2px solid green;
-	
+	//outline: 2px solid green;	
 	padding-bottom: 32px;
 	.reasons-one-three__text {
 		width: 250px;
-		margin: 0 auto;		
+		margin: 0 auto;
+		margin-top: 10px;	
 	}
 }
 .reasons-one-three::after {
@@ -76,14 +86,14 @@
 	.reasons-one-three-cont {
 		display: flex;
 		flex-direction: row;
-		//outline: 1px solid;
+		//outline: 1px solid red;
 
 		.reasons-one-three {
-			width: 256px;
-			height: 256px;
 			//outline: 1px solid;
+			margin: 44px 0;
+			width: 256px;
 			text-align: center;
-			
+			padding-bottom: 0;
 		}
 		.reasons-one-three__number-reason {
 			//outline: 1px solid;
@@ -92,40 +102,47 @@
 		.reasons-one-three__title-1 {
 			width: 120px;
 			margin: 0 auto;
+			margin-bottom: 10px;
 			//outline: 1px solid;
 			font-size: @bigFontSize;
 			font-weight: bold;
 			line-height: 26px;
-		}
-		
+		}				
 		.reasons-one-three__text {
 			width: 162px;
 			margin: 0 auto;
-			margin-top: 10px;
+			margin-top: 20px;
 			//outline: 1px solid;
+		}
+		.reasons-one-three--road {
+			.reasons-one-three__text {
+				//width: 165px;
+			}			 
 		}
 	}
 }
 
 @media (min-width: @desktop-width) {
 	.reasons-one-three-cont {
+		height: 256px;
 		display: flex;
 		flex-direction: row;
 		//outline: 3px solid red;
 
 		.reasons-one-three {
 			width: 400px;
-			height: 256px;
-			//outline: 1px solid black;
+			height: 100%;
+			
 			display: flex;
 			flex-direction: column;
 			margin-top: 0;
+			//outline: 1px solid black;
 			.reasons-one-three__title-1 {
-				margin-top: 50px;
+				margin-top: 41px;
 				//outline: 1px solid black;
 			}
 			.reasons-one-three__number-reason {
-				margin-top: 15px;
+				margin-top: 0;
 				//outline: 1px solid black;
 			}
 			.reasons-one-three__text {

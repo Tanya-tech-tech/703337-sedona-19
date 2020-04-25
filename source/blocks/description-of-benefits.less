@@ -1,43 +1,49 @@
 .description-of-benefits {
-	.mixin-all();
-	.mixin-text-center();
-	line-height: 26px;
+	//outline: 1px solid red;
+	margin-top: 35px;
+	
 	.description-of-benefits__sedona {
+		width: 252px;
 		font-family: @baseFont;
 		font-size: @midFontSize;
 		font-weight: bold;
+		line-height: 26px;
+		margin: 0 auto;
+		//outline: 1px solid;
+		text-align: center;
 	}
 
 	.description-of-benefits__reasons {
+		//outline: 1px solid;
 		color: @black-two;
 		line-height: 26px;
-		
+		width: 258px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 25px; 
 	}
 	
-	.reasons-one__sizes-one {
-		color: @black-two;
-		font-size: @baseFontSize;
-		font-weight: normal;
-	}
-//border: 5px solid green;
 }
 
 @media (min-width: @tablet-width) {
 	.description-of-benefits {
 		//outline: 1px solid;
-		.mixin-flex-center();
-		width: 500px;
+		width: 492px;
 		height: 100px;
-		margin: 51px auto 55px;
+		margin: 0 auto;
+		margin-top:  51px;
+		margin-bottom: 55px; 
 		.description-of-benefits__sedona {
+			width: 100%;
 			margin-top: 0;
 			font-family: @baseFont;
 			font-size: @bigFontSize;
 			font-weight: bold;
 			line-height: 26px;
-			//border: 1px solid;
+			//outline: 1px solid;
 		}
 		.description-of-benefits__reasons {
+			width: 100%;
 			color: @black-two;
 			font-family: @baseFont;
 			font-size: @baseFontSize;
@@ -52,12 +58,12 @@
 @media (min-width: @desktop-width) {
 	.description-of-benefits {
 		//outline: 1px solid;
-		.mixin-flex-center();
 		width: 495px;
 		margin-top: 0px;
 
 		.description-of-benefits__sedona {
-			margin-top: 0;
+			width: 100%;
+			margin-top: 5px;
 			font-family: @baseFont;
 			font-size: @bigFontSize;
 			font-weight: bold;
@@ -65,12 +71,13 @@
 			//outline: 1px solid;
 		}
 		.description-of-benefits__reasons {
+			width: 100%;
 			color: @black-two;
 			font-family: @baseFont;
 			font-size: @baseFontSize;
 			font-weight: normal;
 			line-height: 26px;
-			//border: 1px solid;
+			//outline: 1px solid;
 			text-align: left;
 		}
 	}

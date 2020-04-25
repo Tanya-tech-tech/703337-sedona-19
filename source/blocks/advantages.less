@@ -1,5 +1,6 @@
 .advantages {
 	//outline: 2px solid green;
+	padding: 0;
 	.visually-hidden {
 		.mixin-visually();
 	}
@@ -7,6 +8,7 @@
 		box-sizing: border-box;
 		height: 100%;
 		margin-top: 0;
+		margin-bottom: 0;
 		padding: 0;		
 		display: flex;
 		flex-direction: column;
@@ -18,9 +20,10 @@
 		font-size: @midFontSize;
 		line-height: 26px;
 		font-weight: bold;
-		//border: 1px solid;
+		
 		margin-top: 0;
-		margin-bottom: 0;			
+		margin-bottom: 0;
+		//border: 1px solid;		
 		}
 
 	.advantages__recommendations {
@@ -62,14 +65,22 @@
 		}
 	}
 	.advantages__item--souvenir {
+		svg {
+			margin-top: 20px;
+		}
 		.advantages__row {
 			width: 199px;
+			margin-top: 30px;
 		}		
 	}
 
 	.advantages__item--food {
+		svg {
+			margin-top: 20px;
+		}
 		.advantages__row {
 			width: 182px;
+			margin-top: 22px;
 		}
 	}
 }
@@ -77,19 +88,32 @@
 @media (min-width: @tablet-width) {
 	.advantages {
 		height: 330px;
-		//border: 1px solid;
+		//outline: 1px solid;
 		
 		.advantages__list {
+
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-			//outline: 2px solid red;
+			padding-left: 0;
+			//outline: 5px solid red;
 			
 			.advantages__item {
+				height: 100%;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
 				text-align: center;
+				margin: 0 auto;
+				margin-top: 57px;
 				margin-bottom: 85px;
 				min-height: 100px;
 				//outline: 1px solid;
+				.advantages__row {
+					//outline: 1px solid;
+					margin: 0 auto;
+					margin-top: 28px;
+				}
 				.advantages__title-1 {
 					//outline: 1px solid;
 					font-size: @bigFontSize;
@@ -98,9 +122,14 @@
 				}
 				.advantages__recommendations {
 					//outline: 1px solid;
-					
-				}
-				
+					padding-top: 10px;				
+				}				
+			}
+			.advantages__item svg {
+				width: 77px;
+				height: 75px;
+				margin: 0 auto;
+				//outline: 1px solid;
 			}
 			.advantages__item--housing {
 				order: 0;
@@ -138,58 +167,61 @@
 
 @media (min-width: @desktop-width) {
 	.advantages {
-		height: 330px;
+		height: 330px;		
 		//outline: 1px solid;
 		
 		.advantages__list {
-			height: 100%;
-			margin-top: 0;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around;
-			//outline: 1px solid;
-			box-sizing: border-box;			
+			justify-content: normal;
+			height: 100%;						
+			//outline: 2px solid red;
 			.advantages__item {
+				margin-top: 0;
+				width: 400px;
 				height: 100%;
-				margin-top: 0; 
-				padding-top: 60px;
+				
 				//outline: 1px solid;
-				margin-top: 20px;
 				.advantages__title-1 {
+					margin-top: -5px;
 					//outline: 1px solid;
+				}
+				.advantages__row {
+					width: 100%;
+					//outline: 1px solid;
+					.advantages__recommendations {
+						margin: 0 auto;
+						margin-top: 5px;
+						line-height: 21px;
+					}
 				}
 			}
 			.advantages__item svg {
 				//outline: 1px solid;
 				fill: @blue;
 				margin: 0 auto;
-				margin-bottom: 33px;
+				margin-top: 60px;
+				margin-bottom: 0;
 			}
 			.advantages__item--housing {
-				width: 280px;
+				
 				.advantages__recommendations {
-					width: 100%;
-					margin: 0 auto;
-					//outline: 1px solid;
-					line-height: 21px;
+					width: 280px;
+					//outline: 1px solid;					
 				}
 			}
 			.advantages__item--souvenir {
-				width: 195px;
+				
 				.advantages__recommendations {
-					width: 100%;
-					margin: 0 auto;
-					//outline: 1px solid;
-					line-height: 21px;
+					width: 195px;					
+					//outline: 1px solid;					
 				}
 			}
 			.advantages__item--food {
-				width: 295px;
+				
 				.advantages__recommendations {
-					width: 100%;
-					margin: 0 auto;
-					//outline: 1px solid;
-					line-height: 21px;
+					width: 295px;					
+					//outline: 1px solid;					
 				}
 			}
 		}

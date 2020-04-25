@@ -1,55 +1,76 @@
 .reasons-one-blue-1 {
-	
-	.mixin-reason-blue();
-	.mixin-text-center();
-	.mixin-flex-center();
-
 	//outline: 3px solid red;
+	background-color: @blue;
+	color: @white;
 
 	}
 .reasons-one-blue-1__container-bridge {
-	width: 259px;
-	height: 104px;
-	display: flex;
-	flex-direction: column;
 	//outline: 1px solid;
-	margin-top: 45px;
-	margin-bottom: 42px;
+	width: 259px;
+	margin: 43px auto;
+	text-align: center;
 	padding-top: -50px;
-	.reasons-one-blue-1__title-1 {
-		.mixin-reason-title();
+	.reasons-one-blue-1__title-1 {		
 		//outline: 1px solid;
+		.mixin-reason-title();
 		margin-top: 0;
 		margin-bottom: 0px;
 	}
 	.reasons-one-blue-1__number-reason {
-
 		//outline: 1px solid;
 		line-height: 26px;
+		
 	}
 	.reasons-one-blue-1__sizes-one {
 		//outline: 1px solid;
-		margin-top: 0;
+		margin-top: 20px;
 	}
+	
 
 }
+.reasons-one-blue-1__photo {
+		//outline: 3px solid;
+		margin-bottom: -5px;
+		height: 260px;
+	}
 
 @media (min-width: @tablet-width) {
 	.reasons-one-blue-1 {
-		min-height: 256px;
+		height: 256px;
 		display: flex;
 		flex-direction: row-reverse;
+		//outline: 2px solid green;
 
 		.reasons-one-blue-1__container-bridge {
-			width: 154px;
-			height: 159px;
-			//outline: 1px solid;
-			margin-right: 51px;
+			height: 100%;
+			width: 256px;
+			margin-top: 0;
+			margin-right: 0;
+			//outline: 2px solid red;
+
+			.reasons-one-blue-1__title-1 {
+				margin-top: 47px;
+				display: flex;
+				flex-direction: column;
+				font-size: @bigFontSize;
+				font-weight: bold;
+				line-height: 26px;
+				outline: 1px solid;
+				span {
+					width: 100%;
+					//outline: 1px solid;
+				}
+			}
+			.reasons-one-blue-1__sizes-one {
+				width: 158px;
+				margin: 0 auto;
+				margin-top: 20px;
+				//outline: 1px solid;
+			}
 		}
 		.reasons-one-blue-1__photo {
 			width: 512px;
 			height: 256px;
-			margin-left: 0;
 			//outline: 1px solid;
 		}
 	}
@@ -63,19 +84,21 @@
 
 		.reasons-one-blue-1__container-bridge {
 			width: 400px;
-			height: 256px;
-			//border: 1px solid;
+			height: 100%;
+			margin-top: 0;
+			margin-right: 0;
+			//outline: 1px solid;
 			
 			.reasons-one-blue-1__title-1 {
 				display: flex;
 				flex-direction: column;
-				width: 200px;
-				//outline: 1px solid;
+				width: 200px;				
 				margin: 0 auto;
-				margin-top: 58px;
+				margin-top: 52px;
 				font-weight: bold;
 				font-size: @bigFontSize;
 				line-height: 26px;
+				//outline: 1px solid;
 				span {
 					width: 100%;
 					//outline: 1px solid;

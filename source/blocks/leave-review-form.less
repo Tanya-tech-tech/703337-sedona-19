@@ -1,5 +1,4 @@
-.leave-review {
-	width: 276px;
+.leave-review {	
 	.mixin-flex-center();
 	//outline: 1px solid;
 	margin: 0 auto;
@@ -7,9 +6,10 @@
 		font-size: @midFontSize;
 		font-weight: bold;
 		//outline: 1px solid;
-		margin-top: 41px;
+		margin-top: 38px;
 	}
 	.leave-review__text {
+		width: 280px;
 		font-size: @baseFontSize;
 		font-weight: @normal;
 		color: @black-two;
@@ -21,15 +21,40 @@
 @media (min-width: @tablet-width) {
 	.leave-review {
 		//outline: 3px solid green;
-		width: 450px;
+		
 		margin-bottom: 80px;
 		.leave-review__title {
+			margin-top: 80px;
 			font-size: 30px;
 			font-weight: bold;
 			line-height: 26px;
 			//outline: 1px solid;
 		}
 		.leave-review__text {
+			width: 450px;
+			font-size: @baseFontSize;
+			font-weight: @normal;
+			color: @black-two;
+			line-height: 24px;
+			margin-top: 0;
+			//outline: 1px solid;
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.leave-review {
+		//outline: 3px solid green;		
+		margin-bottom: 120px;
+		.leave-review__title {
+			margin-top: 120px;
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 26px;
+			//outline: 1px solid;
+		}
+		.leave-review__text {
+			width: 450px;
 			font-size: @baseFontSize;
 			font-weight: @normal;
 			color: @black-two;

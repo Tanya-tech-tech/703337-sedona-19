@@ -1,6 +1,6 @@
 
 .reasons-one-blue {
-	//outline: 5px solid blue;
+	//outline: 2px solid blue;
 	width: 265px;
 	height: 105px;
 	display: flex;
@@ -10,19 +10,21 @@
     color: @white;
     font-weight: @normal;
     line-height: 21px;
-	margin-top: 43px;
+    margin: 0 auto;
+	margin-top: 37px;
 	margin-bottom: 45px;
-
+	
 	.reasons-one-blue__title-1 {
-		width: 100px;
 		//outline: 1px solid;
+		width: 250px;		
 		text-align: center;
 		font-size: @midFontSize;
 		font-weight: bold;
 		color: @white;
-		line-height: 26px;		
+		line-height: 26px;	
 		margin: 0 auto;
 		margin-bottom: 10px;
+		padding-top: 0;
 	}
 	.reasons-one-blue__number-reason {
 		//border: 1px solid;
@@ -41,28 +43,51 @@
 		line-height: 21px;
 	}
 }
+.container-mask__ph {
+	margin-bottom: -5px;
+}
 
 @media (min-width: @tablet-width) {
 	.reasons-one-blue {
-	min-width: 256px;
-	min-height: 256px;
-	.mixin-flex-center();
-	//border: 1px solid;
-}
+		min-width: 256px;
+		min-height: 256px;
+		margin: 0 auto;
+		margin-left: 0;
+		//outline: 1px solid;
+		.reasons-one-blue__title-1 {
+			width: 160px;
+			font-size: @bigFontSize;
+			font-weight: bold;
+			line-height: 26px;
+			margin-top: 0 auto;
+			margin-top: 46px;
+			//outline: 1px solid;
+		}
+		.reasons-one-blue__sizes-one {
+			width: 163px;
+			margin: 0 auto;
+			margin-top: 20px;
+			//outline: 1px solid;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
 	.reasons-one-blue {
 		width: 400px;
 		height: 256px;
-		.mixin-flex-center();
-		outline: 1px solid;
+		margin: 0 auto;
+		margin-left: 0;
+		//outline: 1px solid;
 		.reasons-one-blue__title-1 {
 			width: 130px;
 			font-weight: bold;
 			font-size: @bigFontSize;
 			line-height: 26px;
 			//outline: 1px solid;
+		}
+		.reasons-one-blue__sizes-one {
+			width: 270px;
 		}
 	}
 }
