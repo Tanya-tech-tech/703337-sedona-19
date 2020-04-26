@@ -1,6 +1,64 @@
 .form {
-	//outline: 3px solid red;
-	
+	outline: 3px solid red;
+	display: flex;
+	flex-direction: column;
+	legend {
+		font-size: @midFontSize;
+		font-weight: bold;
+		line-height: 26px;
+	}
+	input[type=text],
+	input [type=radio],
+	input [type=checkbox],
+	textarea {
+		font-size: @midFontSize;
+		font-weight: bold;
+		line-height: 26px;
+		text-transform: none;
+	}
+	.form__impres {
+		outline: 1px solid;
+		order: 1
+
+	}
+	.form__introduce {
+		outline: 1px solid;
+		order: -1;
+
+
+	}
+	.form__contact-info {
+		outline: 1px solid;
+		order: 0;
+
+	}
+	.form__attraction {
+		outline: 1px solid;
+		order: 2;
+	}
+	.form__emotions {
+		outline: 1px solid;
+		order: 3;
+	}
+	.feedback-button {
+		outline: 1px solid;
+		order: 4;
+		margin: 0 auto;		
+		.button {
+			font-family: @baseFont;
+			font-size: 21px;
+			font-weight: bold;
+			line-height: 26px;
+			width: 280px;
+			height: 58px;
+			background-color: @blue;
+			color: @white;
+			text-transform: uppercase;
+		}
+		.feedback-button__necessarily {
+			display: none;
+		}
+	}
 }
 @media (min-width: @tablet-width) {}
 
