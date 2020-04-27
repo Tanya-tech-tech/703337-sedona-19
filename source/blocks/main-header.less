@@ -1,8 +1,6 @@
 .main-header {
-  width: 320px;
-  .mixin-flex-center();
-  margin: 0 auto;
-  //border: 1px solid;
+  
+ //outline: 3px solid pink;
 }
 
 
@@ -17,25 +15,12 @@
 
 @media (min-width: @desktop-width) {
   .main-header{
+    //outline: 3px solid green;
     width: 1200px;
-    //border: 3px solid green;
+    box-sizing: border-box;
+    margin: 0 auto;
     background-color: @white;
 
-    .main-header__box {
-      width: 187px;
-      height: 96px;
-      position: absolute;
-      top: 0;
-      left: 507px;
-      //border: 4px solid;
-      background-color: transparent;
-      .main-header__logo {
-        //border: 1px solid;
-        position: static;
-      }
-      
-    }
-    
   }
 	
 }

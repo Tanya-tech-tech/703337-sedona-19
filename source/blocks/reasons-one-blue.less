@@ -1,51 +1,94 @@
 
 .reasons-one-blue {
-	//border: 5px solid blue;
+	//outline: 2px solid blue;
 	width: 265px;
 	height: 105px;
-	.mixin-flex-center();
-	.mixin-reason-blue();
-	.mixin-text-center();
-	margin-top: 43px;
+	display: flex;
+	flex-direction: column;
+	background-color: @blue;
+    font-size: @baseFontSize;
+    color: @white;
+    font-weight: @normal;
+    line-height: 21px;
+    margin: 0 auto;
+	margin-top: 37px;
 	margin-bottom: 45px;
-
+	
 	.reasons-one-blue__title-1 {
-		.mixin-reason-title();
+		//outline: 1px solid;
+		width: 250px;		
+		text-align: center;
 		font-size: @midFontSize;
-		line-height: 26px;
-		margin-top: 0;
-		margin-bottom: 0px;
+		font-weight: bold;
+		color: @white;
+		line-height: 26px;	
+		margin: 0 auto;
+		margin-bottom: 10px;
+		padding-top: 0;
 	}
 	.reasons-one-blue__number-reason {
 		//border: 1px solid;
 		font-size: @baseFontSize;
 		font-weight: @normal;
 		line-height: 21px;
+		margin: 0 auto;
 	}
 	.reasons-one-blue__sizes-one {
-		//border: 1px solid;
-		margin-top: 0;
+		//outline: 1px solid;
+		width: 270px;
+		margin-top: 15px;
+		text-align: center;
 		font-size: @baseFontSize;
 		font-weight: @normal;
 		line-height: 21px;
 	}
 }
+.container-mask__ph {
+	margin-bottom: -5px;
+}
 
 @media (min-width: @tablet-width) {
 	.reasons-one-blue {
-	min-width: 256px;
-	min-height: 256px;
-	.mixin-flex-center();
-	//border: 1px solid;
-}
+		min-width: 256px;
+		min-height: 256px;
+		margin: 0 auto;
+		margin-left: 0;
+		//outline: 1px solid;
+		.reasons-one-blue__title-1 {
+			width: 160px;
+			font-size: @bigFontSize;
+			font-weight: bold;
+			line-height: 26px;
+			margin: 0 auto;
+			margin-top: 46px;
+			//outline: 1px solid;
+		}
+		.reasons-one-blue__sizes-one {
+			width: 163px;
+			margin: 0 auto;
+			margin-top: 20px;
+			//outline: 1px solid;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
-
-.reasons-one-blue {
-	width: 400px;
-	height: 256px;
-	.mixin-flex-center();
-	//border: 1px solid;
-}
+	.reasons-one-blue {
+		width: 400px;
+		height: 256px;
+		margin: 0 auto;
+		margin-left: 0;
+		//outline: 1px solid;
+		.reasons-one-blue__title-1 {
+			width: 130px;
+			font-weight: bold;
+			font-size: @bigFontSize;
+			line-height: 26px;
+			margin-top: 52px;
+			//outline: 1px solid;
+		}
+		.reasons-one-blue__sizes-one {
+			width: 270px;
+		}
+	}
 }

@@ -1,4 +1,38 @@
-@media (min-width: @tablet-width) {}
+.for-center {
+	width: 280px;
+	height: 58px;
+	margin: 0 auto;
+	margin-top: 20px;
+	//outline: 1px solid;
+}
+.button-hotel {
+	width: 100%;
+	height: 100%;
+	background-color: @blue;
+	color: @white;
+	font-family: @baseFont;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 26px;		
+}
+
+@media (min-width: @tablet-width) {
+	.for-center {
+		//outline: 5px solid red;
+		margin-top: 44px;
+		margin-bottom: 0px;
+		width: 458px;
+	}
+	.button-hotel {
+		width: 100%;
+		font-family: @baseFont;
+		font-size: @bigFontSize;
+		font-weight: bold;
+		line-height: 26px;
+		outline: none;
+	}
+}
 
 @media (min-width: @desktop-width)  {
 	.for-center {
@@ -8,6 +42,8 @@
 		background-color: @blue;
 		color: @white;
 		margin-top: 52px;
+		margin-bottom: 0;
+		//outline: 5px solid red;
 
 		.button-hotel {
 			width: 100%;
