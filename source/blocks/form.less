@@ -1,47 +1,188 @@
 .form {
-	outline: 3px solid red;
+	//outline: 3px solid grey;
+	width: 320px;
 	display: flex;
 	flex-direction: column;
+	
 	legend {
+		//outline: 2px solid;
+		font-family: @baseFont;
 		font-size: @midFontSize;
 		font-weight: bold;
 		line-height: 26px;
+		text-align: center;
+		margin-top: 20px;
 	}
 	input[type=text],
-	input [type=radio],
-	input [type=checkbox],
+	input [type=tel],
+	input [type=email],
 	textarea {
+		font-family: @baseFont;
 		font-size: @midFontSize;
 		font-weight: bold;
 		line-height: 26px;
 		text-transform: none;
+		background-color: @back-grey;
+	}
+	fieldset {
+		//outline: 1px solid red;
+		padding: 0;
+		border-bottom: 1px solid @back-grey;
+		border: none;
+		
 	}
 	.form__impres {
 		outline: 1px solid;
-		order: 1
-
+		order: 1;		
+		border-bottom: 1px solid @back-grey;
+		.impres__list {
+			outline: 2px solid green;
+			list-style: none;
+			padding: 0;
+			.impres__item {
+				width: 100%;
+				height: 58px;
+				padding-top: 15px;				
+				outline: 1px solid;
+				label {
+					font-family: @baseFont;
+					font-size: @midFontSize;
+					font-weight: bold;
+					line-height: 26px;
+					text-transform: none;
+					margin-left: 20px;
+				}
+				input {
+					margin-left: 25px;
+				}
+			}
+		}
 	}
 	.form__introduce {
-		outline: 1px solid;
-		order: -1;
-
-
+		//outline: 1px solid;
+		order: -1;		
+		margin-top: 25px;
+		border-bottom: 1px solid @back-grey;
+		//background-color: yellow;
+		.introduce__list {
+			//outline: 2px solid green;
+			list-style: none;
+			padding: 0;
+			.introduce__item {
+				width: 100%;
+				//outline: 3px solid;
+				label {
+					//outline: 1px solid;
+					margin-left: 15px;
+				}
+				input {
+					height: 58px;
+					padding-left: 25px;
+					border: none;
+				}
+				.introduce__nick {
+					width: 206px;
+					margin-left: 9px;
+				}
+				.introduce__surname {
+					width: 170px;
+					margin-top: 20px;
+					margin-left: 8px;
+				}
+				.introduce__patronymic {
+					width: 170px;
+					margin-left: 7px;
+					margin-top: 20px;
+					margin-left: 14px;
+					margin-bottom: 7px;
+				}
+			}
+		}
 	}
 	.form__contact-info {
-		outline: 1px solid;
+		//outline: 1px solid orange;
 		order: 0;
-
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid @back-grey;		
+		//background-color: pink;
+		.contact-info__list {
+			//outline: 2px solid green;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			.contact-info__item {
+				width: 100%;
+				outline: 2px solid red;
+				label {
+					outline: 1px solid;
+					margin-left: 40px;
+					margin-top: 15px;
+				}
+				input {
+					width: 260px;
+					height: 58px;
+					padding-left: 22px;
+					background-color: @back-grey;
+					font-family: @baseFont;
+					font-size: @midFontSize;
+					font-weight: bold;
+					line-height: 26px;
+					text-transform: none;
+					border: none;
+					margin-left: 18px;
+					//outline: 1px solid;
+				}
+				.contact-info__tel {
+					margin-top: 20px;
+					
+				}
+				.contact-info__email {
+					margin-top: 14px;								
+				}
+			}			
+		}		
 	}
 	.form__attraction {
-		outline: 1px solid;
+		outline: 1px solid;		
 		order: 2;
+		.attraction__list {
+			list-style: none;
+			padding: 0;
+			outline: 2px solid green;
+			.attraction__item {
+				width: 100%;
+				outline: 1px solid;
+				label {
+					font-family: @baseFont;
+					font-size: @midFontSize;
+					font-weight: bold;
+					line-height: 26px;
+					text-transform: none;
+					margin-left: 20px;
+				}
+				.attraction__name {					
+					margin-left: 25px;
+				}
+			}
+		}
 	}
 	.form__emotions {
 		outline: 1px solid;
 		order: 3;
+		.emotions__delight {
+			width: 279px;
+			height: 160px;
+			background-color: @back-grey;
+			margin-left: 15px;
+			outline: 2px solid red;
+		}
 	}
+	
+
 	.feedback-button {
 		outline: 1px solid;
+		margin-top: 50px;
 		order: 4;
 		margin: 0 auto;		
 		.button {
