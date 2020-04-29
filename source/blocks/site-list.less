@@ -42,13 +42,14 @@
 .logo {
 	order: 1;
 	height: 56px;
+	padding: 0;
 	background-color: @white;
 	//outline: 2px solid;
 	display: flex;
 	flex-direction: row;
 	border-bottom: none;
 	.logo__link {
-		display: none;
+		//display: none;
 		background-color: transparent;
 		//outline: 3px solid;
 		margin-left: 109px;
@@ -121,15 +122,11 @@
 		}
 		.logo {
 			order: 0;
-			//outline: 5px solid red;
+			//outline: 3px solid red;
 			.logo__link {
 				//outline: 2px solid;
 				margin: 0 auto;
-				svg {
-			    	#Layer_2 path {
-			    		display: none;
-			    	} 
-			    }
+				
 			}
 			.logo__toggle {
 				display: none;
@@ -183,14 +180,16 @@
 		}
 		.logo {
 			//outline: 1px solid;
+
 			.logo__link {
 				//outline: 1px solid;
-				display: block;
+				width: 187px;
+				height: 96px;
 				margin: 0 auto;
 				svg {
-			    	#Layer_2 path {
+					/*#Layer_2 path {
 			    		display: none;
-			    	} 
+			    	}*/
 			    }
 			}			
 		}
