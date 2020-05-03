@@ -14,7 +14,6 @@
 	top: 13px;
 	right: 22px;
 	background-color: @blue;
-	background-image: url("@{path-img}/icon-cross.svg") no-repeat;
 	border: none;
 	//outline: 2px solid;
 }
@@ -22,7 +21,7 @@
 	.visually-hidden {
 		.mixin-visually();
 	}
-	.site-list__svg {
+	.site-list__icon-close {
 		fill: @white;
 	}
 
@@ -50,28 +49,44 @@
 	border-bottom: none;
 	.logo__link {
 		//display: none;
-		background-color: transparent;
-		//outline: 3px solid;
-		margin-left: 109px;
+		//outline: 3px solid red;
+		background-color: transparent;		
+		margin-left: 65px;
 		border-bottom: none;
+		svg {
+			//outline: 1px solid;
+			
+		}		
 	}
+	.exempl3 {
+                display: none;
+            }
+    .exempl4 {
+            	display: none;
+            }
+    .exempl5 {
+            	display: none;
+            }
+	
 	.logo__toggle {
 		height: 23px;
 		width: 23px;
 		cursor: pointer;
 		//outline: 1px solid;
 		margin-top: 17px;
-		margin-left: 66px;
+		margin-left: 40px;
 		padding: 0;
 		background-color: @white;
-		border-bottom: none;
-		border-right: none;
+		//border-bottom: none;
+		//border-right: none;
+		//border-left: none;
+		border: none;
 		//border: 5px solid;
 		.visually-hidden {
 			.mixin-visually();
 		}
 	}
-	.logo__toggle svg {
+	.logo__icon-menu {
 
 		fill: @blue;
 		border-bottom: none;
@@ -126,10 +141,18 @@
 			.logo__link {
 				//outline: 2px solid;
 				margin: 0 auto;
-				
+				svg {
+					
+				}				
 			}
 			.logo__toggle {
 				display: none;
+			}
+			.exempl4 {
+				display: inline-block;
+			}
+			.exempl5 {
+				display: inline-block;
 			}
 		}
 	}
@@ -187,11 +210,12 @@
 				height: 96px;
 				margin: 0 auto;
 				svg {
-					/*#Layer_2 path {
-			    		display: none;
-			    	}*/
-			    }
-			}			
+					
+                }
+			}
+			.exempl3 {
+				display: inline-block;
+			}		
 		}
 	}	
 }
