@@ -1,13 +1,13 @@
 .video-sedona {
 	//outline: 3px solid red;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	.video-sedona__cont {
 		//outline: 1px solid;
 		width: 244px;
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 		padding-top: 0;
 		.video-sedona__title {
 			margin-top: -5px;
@@ -32,13 +32,81 @@
 		}
 	}
 }
-.video-sedona__video {
-	.mixin-size(320px, 201px);
-	background: url("@{path-img}/video-mobile@1x.jpg") no-repeat;
+.video-sedona__video {	
+	display: flex;
+	flex-direction: column;	
 	//outline: 2px solid green;
-	@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-			background-image: url("@{path-img}/video-mobile@2x.jpg");
-			}
+	.video-sedona__im {
+		width: 100%;
+		height: 201px;
+
+	}
+	.video-sedona__range {
+		width: 280px;
+		height: 111px;
+		margin: 0 auto;
+		margin-top: -45px;
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.6);
+		position: relative;
+		.view-sedona__icon-replay {
+			position: absolute;
+			top: 67px;
+			left: 25px;
+			fill: #5c6870;
+		}
+		.view-sedona__icon-subtitles {
+			position: absolute;
+			top: 67px;
+			left: 174px;
+			fill: #5c6870;
+		}
+		.view-sedona__icon-fullscreen {
+			position: absolute;
+			top: 67px;
+			right: 23px;
+			fill: #5c6870;
+		}
+		.view-sedona__icon-replay:hover,
+		.view-sedona__icon-subtitles:hover,
+		.view-sedona__icon-fullscreen:hover {
+			fill: #333333;
+		}
+		.view-sedona__icon-replay:active,
+		.view-sedona__icon-subtitles:active,
+		.view-sedona__icon-fullscreen:active {
+			fill: rgba(51, 51, 51, 0.3);
+		}
+	}
+	.video-sedona__range::before {
+		position: absolute;
+		top: 20px;
+		left: 22px;
+		content: "";
+		width: 235px;
+		height: 3px;
+		background-color: @white;
+		opacity: 0.6;
+	}
+	.video-sedona__range::after {
+		position: absolute;
+		top: 16px;
+		left: 42px;
+		content: "";
+		width: 10px;
+		height: 11px;
+		background-color: @white;
+		border-radius: 50%;
+	}
+	.video-sedona__player {
+		
+		margin-top: auto;
+		margin-bottom: 0;
+		background-color: @back-grey;
+		width: 280px;
+		height: 66px;		
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -70,13 +138,60 @@
 			}
 		}
 		.video-sedona__video {
+			//outline: 2px solid red;
 			width: 100%;
 			height: 499px;
-			background: url("@{path-img}/video-tablet@1x.jpg") no-repeat;
-			//border: 1px solid green;
-			@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-			background-image: url("@{path-img}/video-tablet@2x.jpg");
+			margin-bottom: 45px;
+			.video-sedona__im {
+				width: 100%;
+				height: 499px;
 			}
+			.video-sedona__range {
+				width: 100%;
+				height: 93px;
+				margin-top: -93px;
+				.view-sedona__icon-replay {
+					position: absolute;
+					top: 35px;
+					left: 35px;
+					fill: @white;
+				}
+				.view-sedona__icon-subtitles {
+					position: absolute;
+					top: 36px;
+					left: 524px;
+					fill: @white;					
+				}
+				.view-sedona__icon-fullscreen {
+					position: absolute;
+					top: 36px;
+					right: 41px;
+					fill: @white;					
+				}
+				.video-sedona__player {
+					display: none;
+				}
+				.view-sedona__icon-replay:hover,
+				.view-sedona__icon-subtitles:hover,
+				.view-sedona__icon-fullscreen:hover {
+					fill: rgba(250, 250, 250, 0.6);
+				}
+				.view-sedona__icon-replay:active,
+				.view-sedona__icon-subtitles:active,
+				.view-sedona__icon-fullscreen:active {
+					fill: rgba(250, 250, 250, 0.3);
+				}
+			}
+			.video-sedona__range::before {
+				content: "";
+				width: 389px;
+				top: 45px;
+				left: 93px;
+			}
+			.video-sedona__range::after {
+				top: 41px;
+				left: 205px;
+			}		
 		}		
 	}
 }
@@ -84,6 +199,8 @@
 @media (min-width: @desktop-width){
 	.video-sedona {
 		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 60px;
 		//outline: 3px solid;
 		.video-sedona__cont {			
 			width: 425px;
@@ -99,13 +216,31 @@
 			}
 		}
 		.video-sedona__video {
+			//outline: 2px solid green;
 			width: 800px;
-			height: 500px;
 			margin: 0 auto;
-			background: url("@{path-img}/video-desktop@1x.jpg") no-repeat;
-			//outline: 3px solid green;
-			@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-			background-image: url("@{path-img}/video-desktop@2x.jpg");
+			.video-sedona__im {
+				width: 100%;
+				height: 500px;
+			}
+			.video-sedona__range {
+				width: 100%;
+				height: 93px;
+				margin-top: -93px;
+				.view-sedona__icon-replay {					
+					top: 35px;
+					left: 35px;					
+				}
+				.view-sedona__icon-subtitles {					
+					top: 36px;
+					left: 675px;					
+					///outline: 1px solid white;
+				}
+				.view-sedona__icon-fullscreen {					
+					top: 36px;
+					right: 41px;					
+					//outline: 1px solid white;
+				}
 			}
 		}		
 	}
