@@ -26,6 +26,9 @@
 	}
 
 }
+.site-list__close:hover {
+	background-color: #669ec0;
+}
 
 .site-list__item {
 	height: 56px;
@@ -50,24 +53,26 @@
 }
 .site-list__item:hover:not(.logo) {
 	background-color: #669ec0;
+	.site-list__close {
+		background-color: #669ec0;
+	}
 }
-.site-list__item:active {
+.site-list__item:active:not(.logo) {
 	background-color: #5496bd;
 	.site-list__link {
 		color: rgba(255, 255, 255, 0.3);
 	}	
 }
-
-
 .logo {
 	order: 1;
 	height: 56px;
 	padding: 0;
 	background-color: @white;
-	//outline: 2px solid;
 	display: flex;
 	flex-direction: row;
-	border-bottom: none;
+	border: none;
+	outline: none;
+	//outline: 2px solid;
 	.logo__link {
 		//display: none;
 		//outline: 3px solid red;
