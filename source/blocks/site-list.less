@@ -1,5 +1,5 @@
 .site-list {
-	//outline: 1px solid;	
+	//outline: 1px solid;
 	display: flex;
 	flex-direction: column;
 	padding: 0;
@@ -7,6 +7,7 @@
 	position: relative;
 }
 .site-list__close {
+	display: none;
 	max-width: 23px;
 	height: 22px;
 	cursor: pointer;
@@ -61,7 +62,7 @@
 	background-color: #5496bd;
 	.site-list__link {
 		color: rgba(255, 255, 255, 0.3);
-	}	
+	}
 }
 .logo {
 	order: 1;
@@ -76,9 +77,9 @@
 	.logo__link {
 		//display: none;
 		//outline: 3px solid red;
-		background-color: transparent;		
+		background-color: transparent;
 		margin-left: 65px;
-		border-bottom: none;			
+		border-bottom: none;
 	}
 	.back-blue {
 		display: none;
@@ -89,17 +90,17 @@
     .cloud-2 {
     	display: none;
     }
-	
+
 	.logo__toggle {
 		//outline: 1px solid;
 		height: 23px;
 		width: 23px;
-		cursor: pointer;		
+		cursor: pointer;
 		margin-top: 17px;
 		margin-left: 25px;
 		padding: 0;
-		background-color: @white;		
-		border: none;		
+		background-color: @white;
+		border: none;
 		.visually-hidden {
 			.mixin-visually();
 		}
@@ -165,13 +166,13 @@
 		.logo {
 			order: 0;
 			padding: 0;
-			border-bottom: none;			
+			border-bottom: none;
 			//outline: 1px solid red;
-			
+
 			.logo__link {
 				//outline: 2px solid;
 				margin-left: -15px;
-				//margin: 0 auto;								
+				//margin: 0 auto;
 			}
 			.cloud-1 {
 				display: inline-block;
@@ -181,13 +182,13 @@
 			}
 			.logo__toggle {
 				display: none;
-			}			
+			}
 		}
 	}
 
 	.site-list__close  {
 		display: none;
-	}	
+	}
 }
 
 @media (min-width: @desktop-width) {
@@ -231,11 +232,11 @@
 				//outline: 1px solid;
 				width: 187px;
 				height: 96px;
-				margin: 0 auto;				
+				margin: 0 auto;
 			}
 			.back-blue {
 				display: inline-block;
-			}		
+			}
 		}
-	}	
+	}
 }
