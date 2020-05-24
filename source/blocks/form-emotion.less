@@ -1,0 +1,69 @@
+.form__emotions {
+  //outline: 1px solid;
+  margin-top: 40px;
+  order: 3;
+  position: relative;
+  .emotions__delight {
+    width: 279px;
+    height: 160px;
+    background-color: @back-grey;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-left: 21px;
+    box-sizing: border-box;
+    //outline: 2px solid red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__emotions {
+    order: 3;
+    width: 100%;
+    margin-top: 55px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    //outline: 2px solid red;
+    legend::before {
+      position: absolute;
+      top: 15px;
+      left: 60px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #e6e6e6;
+      //outline: 1px solid;
+    }
+    legend::after {
+      position: absolute;
+      top: 15px;
+      right: 60px;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+    .emotions__delight {
+      width: 648px;
+      height: 160px;
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__emotions {
+    width: 100%;
+    margin-top: 65px;
+    //outline: 1px solid;
+    .emotions__delight {
+      width: 960px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding-top: 20px;
+    }
+  }
+}

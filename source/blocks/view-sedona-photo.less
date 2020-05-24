@@ -1,13 +1,18 @@
 .view-sedona {
 	.mixin-border-bottom();
-	//outline: 1px solid;
+	padding: 0;
+	//outline: 2px solid red;
 	.view-sedona__cont {
-		//outline: 1px solid;
+
+		margin-bottom: 0;
+		padding-bottom: 0;
+		//outline: 2px solid orange;
 		.view-sedona__text {
 			margin-top: 10px;
 			margin-bottom: 0;
 		}
 		.view-sedona__row {
+			margin-bottom: 0;
 			//outline: 1px solid;
 			.view-sedona__author {
 				//outline: 1px solid;
@@ -25,7 +30,7 @@
 				margin-top: 0px;
 				display: flex;
 				margin-left: 20px;
-				margin-bottom: 23px;
+				margin-bottom: 13px;
 				//outline: 1px solid;
 				.view-sedona__like {
 					font-size: @baseFontSize;
@@ -52,6 +57,14 @@
 		margin-left: 20px;
 		margin-top: 10px;
 		//outline: 1px solid;
+}
+.view-row {
+	//outline: 1px solid red;
+	margin-top: 10px;
+	.view-sedona {
+		//outline: 1px solid;
+		margin-bottom: 10px;
+	}
 }
 
 .view-sedona__picture-1 {
@@ -136,16 +149,23 @@
 		.view-sedona {
 			width: 50%;
 			margin-left: 0;
+
 			.view-sedona__cont {
 				.view-sedona__row {
 					padding-right: 33px;
 				}
 			}
+			.view-sedona__cont--anoth {
+				background-color: #eaeaea;
+				//outline: 2px solid red;
+			}
 		}
 	}
-	.view-sedona__cont--anoth {
-		background-color: red;
+	.view-row > div:nth-child(3){
+		margin-top: -10px;
+		//outline: 1px solid red;
 	}
+
 	.view-sedona__picture-2 {
 				width: 100%;
 				height: 267px;
@@ -167,7 +187,7 @@
 	.view-sedona {
 		width: 100%;
 		height: 400px;
-		margin-top: 40px;
+		margin-top: 0px;
 		margin-bottom: 0;
 		//outline: 2px solid green;
 		.view-sedona__picture-1 {
@@ -207,6 +227,8 @@
 	.view-row {
 		width: 100%;
 		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
 		.mixin-flex-row();
 		flex-wrap: wrap;
 		box-sizing: border-box;
@@ -234,5 +256,9 @@
 					.mixin-flex-row();
 			}
 		}
+	}
+	.view-row > div:nth-child(3){
+		margin-top: 0px;
+		//outline: 1px solid red;
 	}
 }

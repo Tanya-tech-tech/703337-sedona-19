@@ -1,6 +1,6 @@
 .main-footer {
 	//outline: 2px solid green;
-	width: 100%;	
+	width: 100%;
 	background-color: #fefefe;
 	margin: 0 auto;
 	.main-footer__list {
@@ -10,13 +10,13 @@
 		flex-direction: column;
 		padding: 0;
 		.main-footer__item {
-			//outline: 1px solid;			
+			//outline: 1px solid;
 			.main-footer__contacts {
 				font-size: @bigFontSize;
 				font-weight: bold;
 				line-height: 26px;
 				.mixin-text-center();
-				//outline: 1px solid;		
+				//outline: 1px solid;
 			}
 			.social {
 				display: flex;
@@ -29,7 +29,7 @@
 						//outline: 1px solid;
 						display: flex;
 						justify-content: center;
-						align-items: center;						
+						align-items: center;
 						width: 46px;
 						height: 48px;
 						background-color: @blue;
@@ -66,7 +66,7 @@
 				margin-top: 30px;
 				font-size: @baseFontSize;
 				font-weight: @normal;
-				line-height: 26px;				
+				line-height: 26px;
 				display: flex;
 				flex-direction: row;
 				align-items: center;
@@ -80,15 +80,15 @@
 					fill: @blue;
 				}
 				.copyright__icon-htmlacademy:active {
-					opacity: 0.3; 
+					opacity: 0.3;
 				}
 				span {
 					margin-top: 0;
 					//outline: 1px solid;
 				}
-			}									
+			}
 		}
-	}		
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -107,17 +107,17 @@
 			list-style: none;
 			padding: 0;
 			.main-footer__item {
-				width: 256px;				
+				width: 256px;
 				//outline: 1px solid;
 				.main-footer__contacts {
 					margin-top: 40px;
 					//outline: 1px solid;
 				}
-				.main-footer__social {					
+				.main-footer__social {
 					display: flex;
 					flex-direction: row;
 					flex-wrap: wrap;
-					justify-content: center;			
+					justify-content: center;
 					//outline: 1px solid;
 				}
 				.main-footer__copyright {
@@ -129,17 +129,18 @@
 					}
 				}
 			}
-		}		
+		}
 	}
 }
 
 @media (min-width: @desktop-width) {
 	.main-footer {
 		//outline: 3px solid;
-		width: 1200px;		
+		width: 1200px;
 		margin: 0 auto;
-		padding-top: 10px;
-		padding-bottom: 10px;		
+		margin-top: -15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 		.main-footer__list {
 			//outline: 5px solid red;
 			width: 100%;
@@ -150,11 +151,11 @@
 			list-style: none;
 			padding-bottom: 30px;
 			.main-footer__item {
-				width: 400px;				
+				width: 400px;
 				//outline: 1px solid red;
 			}
 		}
-		.main-footer__contacts {			
+		.main-footer__contacts {
 			//outline: 1px solid;
 			margin-left: -10px;
 		}
@@ -167,9 +168,9 @@
 			justify-content: center;
 			//outline: 1px solid;
 		}
-		.main-footer__copyright {			
+		.main-footer__copyright {
 			//outline: 1px solid;
-			margin-right: -10px;						
-		}		
+			margin-right: -10px;
+		}
 	}
 }
