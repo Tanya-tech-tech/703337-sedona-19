@@ -13,6 +13,7 @@ var email = form.querySelector("[name=email]");
 var isStorageSupport = true;
 var storage = "";
 
+
 link.addEventListener("click", function (evt) {
   if (!nick.value || !surname.value || !tel.value || !email.value) {
     evt.preventDefault();
@@ -27,7 +28,7 @@ ok.addEventListener("click", function (evt) {
 
 link.addEventListener("click", function () {
  if (nick.value && surname.value && tel.value && email.value) {
-      
+
       popup.classList.add("modal-show");
     }
   });
