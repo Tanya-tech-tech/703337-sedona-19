@@ -1,32 +1,37 @@
-.photo-video__for-position {
-	width: 100%;
-	.mixin-border-bottom();
-	padding-bottom: 13px;
-	//outline: 1px solid red;
-	.photo-video__cont {
-		width: 279px;		
-		.mixin-text-center();
-		margin: 0 auto;
-		//outline: 1px solid;
-
-		.photo-video__title {
-			margin-top: 45px;
-			margin-bottom: 0;
-			font-size: @midFontSize;
-			font-weight: bold;
-			line-height: 26px;
+.photo-video {
+	margin-top: 40px;
+	margin-bottom: 5px;
+	//outline: 3px solid pink;
+	.photo-video__for-position {
+		width: 100%;
+		.mixin-border-bottom();
+		padding-bottom: 13px;
+		//outline: 1px solid red;
+		.photo-video__cont {
+			width: 279px;
+			.mixin-text-center();
+			margin: 0 auto;
 			//outline: 1px solid;
+			.photo-video__title {
+				padding-top: 0px;
+				margin-bottom: 0;
+				font-size: @midFontSize;
+				font-weight: bold;
+				line-height: 26px;
+				//outline: 1px solid;
+			}
+			.photo-video__text {
+				margin-top: 25px;
+				font-size: @baseFontSize;
+				font-weight: @normal;
+				color: @black-two;
+				line-height: 24px;
+				//outline: 1px solid;
+			}
 		}
-		.photo-video__text {
-			margin-top: 25px;
-			font-size: @baseFontSize;
-			font-weight: @normal;
-			color: @black-two;
-			line-height: 24px;
-			//outline: 1px solid;
-		}
-    }
+	}
 }
+
 
 @media (min-width: @tablet-width) {
 	.photo-video {
@@ -37,7 +42,7 @@
 			//outline: 1px solid;
 			width: 100%;
 			border-bottom: none;
-			
+
 			.photo-video__cont {
 				width: 457px;
 				height: 97px;
@@ -56,7 +61,6 @@
 				}
 			}
 		}
-		
 	}
 }
 
@@ -64,19 +68,23 @@
 	.photo-video {
 		width: 100%;
 		margin: 0 auto;
-
+		//outline: 2px solid orange;
 		.photo-video__for-position {
 			width: 100%;
 			.mixin-flex-center();
-			//outline: 1px solid red;
+			//outline: 2px solid red;
 			margin: 0 auto;
-		}
-
-		.photo-video__cont {
-			//outline: 1px solid;
-			width: 440px;
-			height: 97px
+			.photo-video__cont {
+				//outline: 1px solid;
+				width: 440px;
+				height: 97px;
+				margin-top: 113px;
+				margin-bottom: 67px;
+				.photo-video__title {
+					//outline: 1px solid;
+					margin-top: 0;
+				}
+			}
 		}
 	}
-	
 }

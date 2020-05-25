@@ -1,7 +1,7 @@
-.modal {	
+.modal {
+	display: none;
 	width: 320px;
 	height: 323px;
-	display: none;
 	background-color: @white;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 	position: absolute;
@@ -48,6 +48,9 @@
 		}
 	}
 }
+.modal-show {
+	display: block;
+}
 
 .modal-something-wrong {
 	//outline: 3px solid yellow;
@@ -61,7 +64,6 @@
 	text-align: center;
 	padding-top:  46px;
 	.something-wrong {
-		
 		//outline: 2px solid red;
 		.something-wrong__title {
 			font-family: @baseFont;
@@ -96,7 +98,10 @@
 			margin-bottom: 30px;
 			border: none;
 		}
-	}	
+	}
+}
+.modal-error {
+	display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -120,7 +125,7 @@
 				font-weight: bold;
 				line-height: 26px;
 			}
-			.feedback-sent__text {				
+			.feedback-sent__text {
 				line-height: 24px;
 				margin: 0 auto;
 				margin-bottom: 0;
@@ -155,7 +160,7 @@
 				//outline: 1px solid;
 				margin: 0 auto;
 				width: 255px;
-				font-size: 30px;				
+				font-size: 30px;
 				line-height: 40px;
 			}
 			.something-wrong__text {
