@@ -1,12 +1,16 @@
-.form__attraction {
+.attraction {
   //outline: 1px solid;
   order: 2;
   position: relative;
-  margin-top: 16px;
-  //border-bottom: 1px solid @back-grey;
 
+  margin-top: 16px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid @back-grey;
   .attraction__list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     //outline: 2px solid green;
     .attraction__item {
@@ -19,10 +23,11 @@
         font-weight: bold;
         line-height: 26px;
         text-transform: none;
-        margin-left: 20px;
+        margin-left: 10px;
       }
       .attraction__name {
-        margin-left: 25px;
+        margin-left: -15px;
+        opacity: 0;
       }
       label:hover::before {
         border-color: #e5e5e5;
@@ -39,64 +44,71 @@
     }
   }
 }
+.attraction__list li:nth-child(4) {
+
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 
 @media (min-width: @tablet-width) {
-  .form__attraction {
-    order: 2;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0;
-    position: relative;
-    //outline: 1px solid red;
-    legend {
-      width: 270px;
-      //outline: 1px solid;
-    }
-    legend::before {
-      position: absolute;
-      top: 30px;
-      left: 60px;
-      content: "";
-      width: 125px;
-      height: 1px;
-      background-color: @back-grey;
-      //outline: 1px solid;
-    }
-    legend::after {
-      position: absolute;
-      top: 30px;
-      right: 60px;
-      content: "";
-      width: 125px;
-      height: 1px;
-      background-color: @back-grey;
-    }
-    .attraction__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      //outline: 3px solid green;
-      .attraction__item {
-        width: 50%;
-        box-sizing: border-box;
-        padding-left: 10px;
-        margin-top: 25px;
+  .attraction {
+      order: 2;
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 0;
+      position: relative;
+      border-bottom: none;
+      //outline: 1px solid red;
+      legend {
+        width: 270px;
         //outline: 1px solid;
       }
+      legend::before {
+        position: absolute;
+        top: 25px;
+        left: 60px;
+        content: "";
+        width: 125px;
+        height: 1px;
+        background-color: @back-grey;
+        //outline: 1px solid;
+      }
+      legend::after {
+        position: absolute;
+        top: 25px;
+        right: 60px;
+        content: "";
+        width: 125px;
+        height: 1px;
+        background-color: @back-grey;
+      }
+      .attraction__list {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        //outline: 3px solid green;
+        .attraction__item {
+          width: 50%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          margin-top: 25px;
+          //outline: 1px solid;
+        }
+      }
+      .attraction__list li:nth-child(1),
+      .attraction__list li:nth-child(3) {
+        padding-left: 130px;
+      }
+      .attraction__list li:nth-child(3),
+      .attraction__list li:nth-child(4) {
+        margin-top: 33px;
+      }
     }
-    .attraction__list li:nth-child(1),
-    .attraction__list li:nth-child(3) {
-      padding-left: 130px;
-    }
-    .attraction__list li:nth-child(3),
-    .attraction__list li:nth-child(4) {
-      margin-top: 33px;
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .form__attraction {
+  .attraction {
     width: 100%;
     //outline: 1px solid;
     .attraction__list {

@@ -3,23 +3,22 @@
 	align-items: center;
 	justify-content: center;
 	height: 389px;
-	background-color: pink;
+	background-color: grey;
 	background: url("@{path-img}/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
-	@media (min-resolution: @retina-dpi), 
+	@media (min-resolution: @retina-dpi),
 	       (min-resolution: @retina-dppx) {
-	        background-image: url("@{path-img}/bg-back-mobile@2x.jpg");
-			}
+	       	background-image: url("@{path-img}/bg-back-mobile@2x.jpg");
+	      }
 	background-size: cover;
 	text-align: center;
 	//border: 2px solid;
-
 }
 
 @media (min-width: @tablet-width) {
 	.main-page {
 		//outline: 1px solid;
 		width: 758px;
-		height: 518px;		
+		height: 518px;
 		margin: 0 auto;
 		background: url("@{path-img}/bg-back-tablet@1x.jpg") no-repeat;
 		@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -55,6 +54,6 @@
 			.welcome {
 			display: none;
 			}
-		}		
-	}	
+		}
+	}
 }

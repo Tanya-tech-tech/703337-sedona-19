@@ -1,0 +1,116 @@
+.introduce {
+  //outline: 1px solid;
+  order: -1;
+  border: none;
+  border-bottom: 1px solid @back-grey;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  legend {
+    text-align: left;
+    margin-left: 85px;
+    margin-top: 10px;
+    //outline: 1px solid;
+  }
+  label {
+    //outline: 1px solid;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  input {
+    height: 58px;
+    padding-left: 20px;
+    border: none;
+  }
+  input:hover {
+    background-color: #e5e5e5;
+  }
+  input:focus {
+    background-color: @white;
+    outline: 4px solid #e5e5e5;
+  }
+  .introduce__nick {
+    width: 210px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .introduce__surname {
+    width: 173px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .introduce__patronymic {
+    width: 173px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .introduce {
+    width: 49%;
+    order: 0;
+    margin: 0;
+    border-bottom: none;
+    //outline: 1px solid;
+    legend {
+      text-align: left;
+      margin-left: 55px;
+      //outline: 1px solid;
+    }
+    label {
+      //outline: 1px solid;
+      margin-left: 58px;
+      margin-top: 50px;
+    }
+    .introduce__nick {
+      width: 195px;
+    }
+    .introduce__surname {
+      width: 157px;
+    }
+    .introduce__patronymic {
+      width: 157px;
+    }
+  }
+  .introduce label:nth-child(3) {
+    margin-top: 15px;
+  }
+  .introduce label:nth-child(4) {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .introduce {
+    width: 49,5%;
+    //outline: 1px solid;
+    legend {
+      padding-left: 80px;
+    }
+    label {
+      padding-left: 25px;
+    }
+    .introduce__list {
+    //outline: 1px solid red;
+      .introduce__item {
+        //outline: 1px solid;
+        .introduce__nick {
+          width: 330px;
+        }
+        .introduce__surname {
+          width: 290px;
+        }
+        .introduce__patronymic {
+          width: 290px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

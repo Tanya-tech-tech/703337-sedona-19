@@ -85,7 +85,7 @@
             <a class="site-list__link site-navigation-current" href="index.html">Главная</a>
             <button class="site-list__close" type="button">
               <span class="visually-hidden">Закрыть</span>
-              <svg class="site-list__icon-close" width="22.199" height="22.199">
+              <svg class="site-list__icon-close" width="22" height="22">
                 <!--<use xlink:href="img/sprite.svg#icon-close"></use>-->
                 <use xlink:href="#icon-cross"></use>
               </svg>
@@ -102,8 +102,13 @@
                 <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
                 <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Седона»">
               </picture>-->
+              
+              <svg class="site-list__icon-logo" width="187" height="96">
+                <!--<use xlink:href="img/sprite.svg#icon-close"></use>-->
+                <use xlink:href="#icon-logo-sedona-adaptive"></use>
+              </svg>
 
-              <svg   width="186.643px" height="96.425px" viewBox="0 0 186.643 96.425" >
+              <!--<svg   width="187" height="96" viewBox="0 0 186.643 96.425" >
                 <style>
                 .back-blue {
                 display: none;}
@@ -316,7 +321,7 @@
             </a>
             <button class="logo__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
-              <svg  class="logo__icon-menu" width="22.928" height="21.982">
+              <svg  class="logo__icon-menu" width="23" height="22">
                 <!--<use xlink:href="img/sprite.svg#icon-menu"></use>-->
                 <use xlink:href="#icon-menu"></use>
               </svg>
@@ -358,9 +363,13 @@
             </p>
           </section>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-city-desktop-cut@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop-cut@1x.webp 1x, img/main-city-desktop-cut@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+            
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop-cut@1x.jpg 1x, img/main-city-desktop-cut@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-            <img class="container-mask__ph" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Вид Седоны">
+            <img class="container-mask__ph" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Вид Седоны">
           </picture>
         </div>
 
@@ -368,7 +377,7 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--housing">
-              <svg class="site-list__icon-house" width="37" height="36">
+              <svg class="advantages__item__icon-house" width="37" height="36">
                 <!--<use xlink:href="img/sprite.svg#icon-house"></use>-->
                 <use xlink:href="#icon-house"></use>
               </svg>
@@ -379,7 +388,7 @@
               </div>
             </li>
             <li class="advantages__item advantages__item--souvenir">
-              <svg class="site-list__icon-gift" width="37" height="36">
+              <svg class="advantages__item__icon-gift" width="37" height="36">
                 <!--<use xlink:href="img/sprite1.svg#icon-gift"></use>-->
                 <use xlink:href="#icon-gift"></use>
               </svg>
@@ -390,7 +399,7 @@
               </div>
             </li>
             <li class="advantages__item advantages__item--food">
-              <svg class="site-list__icon-burger" width="37" height="36">
+              <svg class="advantages__item__icon-burger" width="37" height="36">
                 <!--<use xlink:href="img/sprite1.svg#icon-burger"></use>-->
                 <use xlink:href="#icon-burger"></use>
               </svg>
@@ -411,9 +420,13 @@
             </p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop-cut@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">            
-            <img class="reasons-one-blue-1__photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Вид плато">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop-cut@1x.webp 1x, img/main-bridge-desktop-cut@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+            
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop-cut@1x.jpg 1x, img/main-bridge-desktop-cut@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">         
+            <img class="reasons-one-blue-1__photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Вид плато">
           </picture>
         </section>
 
@@ -467,7 +480,7 @@
             <li class="social__item">
               <a class=" social__button social__button--twitter" href="#">
                 <span class="visually-hidden">Твиттер</span>
-                <svg  class="social__icon-twitter" width="17.5" height="14.663">
+                <svg  class="social__icon-twitter" width="18" height="15">
                   <!--<use xlink:href="img/sprite.svg#icon-twitter"></use>-->
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
@@ -476,7 +489,7 @@
             <li class="social__item">
               <a class="social__button social__button--facebook" href="#">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg  class="social__icon-facebook" width="8.672" height="18.944">
+                <svg  class="social__icon-facebook" width="9" height="19">
                   <!--<use xlink:href="img/sprite.svg#icon-facebook"></use>-->
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
@@ -485,7 +498,7 @@
             <li class="social__item">
               <a class="social__button social__button--youtube" href="#">
                 <span class="visually-hidden">Ютуб</span>
-                <svg  class="social__icon-youtube" width="19.979" height="14.015">
+                <svg  class="social__icon-youtube" width="20" height="14">
                   <!--<use xlink:href="img/sprite.svg#icon-youtube"></use>-->
                   <use xlink:href="#icon-youtube"></use>
                 </svg>
@@ -497,7 +510,7 @@
           <p class="main-footer__copyright copyright">
             <span>Разработано</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg  class="copyright__icon-htmlacademy" width="26.943" height="34.09">
+              <svg  class="copyright__icon-htmlacademy" width="27" height="34">
                 <!--<use xlink:href="img/sprite.svg#icon-htmlacademy"></use>-->
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>

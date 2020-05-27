@@ -33,7 +33,8 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
     return gulp.src([
-      "source/fonts/**/*.{woff, woff2}",
+      "source/fonts/*.woff",
+      "source/fonts/*.woff2",
       "source/img/**",
       "source/js/**",
       "source/*.ico"
@@ -49,6 +50,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename({suffix: ".min"}))
     .pipe(sourcemap.write("."))
@@ -70,13 +72,18 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
       ]))
+    .pipe(htmlmin({
+    removeComments: true
+  }))
     .pipe(gulp.dest("build"))
 });
 
 gulp.task("minify-html", function() {
   return gulp.src("source/*.html")
+  .pipe(posthtml([
+      include()
+      ]))
   .pipe(htmlmin({
-    collapseWhitespace: true,
     removeComments: true
   }))
   .pipe(rename({suffix: ".min"}))
@@ -101,7 +108,7 @@ gulp.task("webp", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -119,7 +126,7 @@ gulp.task("build", gulp.series(
     "css",
     "sprite",
     "html",
-    "minify-html",
+
     "minify"
     ));
 gulp.task("start", gulp.series("build", "server"));
